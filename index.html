@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/font.css">
+	<link rel="stylesheet" href="./css/mobile.css">
+	<link rel="stylesheet" href="./css/table.css">
+	<title>Assignment 03</title>
+</head>
+<body>
+	<div id="banner" style="padding: 50px">
+			<h1>Nguyễn Duy Tâm</h1>
+			<span>Backend Developer</span>
+
+	</div>
+
+	<section id="nav-bar">
+		<nav class="container">
+			<div class="nav-item">
+				<div>
+					<i class="icon-user" style="color: blue"></i>
+					<a class="label-nav" href="#">Thông tin</a>
+				</div>
+
+			</div>
+			<div class="nav-item">
+				<div>
+					<i class="icon-briefcase" style="color: blue"></i>
+					<a class="label-nav" href="#">Lý lịch</a>
+				</div>
+
+			</div>
+			<div class="item-center">
+                <img class="avt-nav" src="images/avt.jpg" alt="">
+			</div>
+			<div class="nav-item">
+				<div>
+					<i class="icon-graduation-cap" style="color: blue"></i>
+					<a class="label-nav" href="#">Chứng chỉ</a>
+				</div>
+			</div>
+			<div class="nav-item">
+				<div>
+					<i class="icon-star" style="color: blue"></i>
+					<a class="label-nav" href="#">Dự án</a>
+				</div>
+
+			</div>
+
+		</nav>
+	</section>
+
+	<section id="about">
+		<div class="row container">
+			<div id="target" >
+				<!-- Nội dung cho cột 1 -->
+				<h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+				<p>
+					Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh
+					Nghiệp của FUNiX. Em mong muốn mình sẽ được làm việc với vị
+					trí <b>Fullstack Developer</b>, có thể vận dụng những kiến
+					thức đã được trau dồi và không ngừng học hỏi để phát triển
+					bản thân, cũng như hoàn thành tốt nhất công việc được giao.
+				</p>
+			</div>
+			<div id="personal-info ">
+				<h1 class="section-title">Thông tin cá nhân</h1>
+				<ul id="section-info-detail" class=" info hide">
+					<li><span>Giới tính</span> : Nam</li>
+					<li><span>Ngày sinh</span> : 19/08/2002</li>
+					<li><span>Điện thoại</span> : (+84) 794354262</li>
+					<li><span>Email</span> : tamduynguyen0819@gmail.com</li>
+					<li><span>Địa chỉ</span> : Quận 12, thành phố Hồ Chí Minh</li>
+					<li><span>Website</span> : https://abc.tech</li>
+				</ul>
+				<form id="form-info" onsubmit="return false" class="md-2" >
+					<input type="email" class="form-control" placeholder="Email" aria-label="Email">
+					<div class="form-text" id="input-email">Hãy nhập emai để xem thông tin này</div>
+					<button type="button" class="btn btn-primary btn-submit" >Xác nhận</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section id="job-info">
+		<div class="container row">
+			<div class="info-item col-sm-12 col-md-6 col-lg-4" >
+				<div class="info-item-header">
+					<h1>Kinh nghiệm</h1>
+                    <i class="fa-solid fa-suitcase"></i>
+				</div>
+                <a type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp" aria-expanded="false" aria-controls="collapseExample">
+                    Xem thêm
+                </a>
+                <div class="collapse" id="collapseExp">
+                    <div class="info-item-content">
+                        <ul class="ul-dot">
+                            <li>
+                                <div class="info-item-content-item">
+                                    <p  class="info-item-content-item__header">South Telecom JSC</p>
+                                    <p>10/2022 - 12/2022</p>
+                                    <ul>
+                                        <li> - Mobile Developer</li>
+                                        <li> - Xây dựng và phát triển mobile app dựa trên thiết kế và yêu cầu đã có</li>
+                                        <li> - Công nghệ sự dụng: React Native</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info-item-content-item">
+                                    <p  class="info-item-content-item__header">PSA Solutions JSC</p>
+                                    <p>05/2022 - 09/2022</p>
+                                    <ul>
+                                        <li> - Thực tập sinh</li>
+                                        <li> - Xây dựng và phát triển mobile app dựa trên thiết kế và yêu cầu đã có</li>
+                                        <li> - Công nghệ sự dụng: React Native</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+
+			</div>
+			<div  class="info-item col-sm-12 col-md-6 col-lg-4"  >
+				<div class="info-item-header">
+					<h1 >Học vấn</h1>
+                    <i class="fa-solid fa-pen"></i>
+				</div>
+                <a type="button" data-bs-toggle="collapse" data-bs-target="#collapseSchool" aria-expanded="false" aria-controls="collapseExample">
+                    Xem thêm
+                </a>
+                <div class="collapse" id="collapseSchool">
+                    <ul class="ul-dot">
+                        <li>
+                            <div class="info-item-content-item">
+                                <p  class="info-item-content-item__header">FUNix</p>
+                                <p>06/2023 - <span class="tag-recent">Hiện tại</span> </p>
+                                <ul>
+                                    <li> - Khoá học chứng chỉ Fresher Java </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info-item-content-item">
+                                <p class="info-item-content-item__header">Cao đẳng FPT Polytechnic</p>
+                                <p>09/2020 - 12/2022 </p>
+                                <ul>
+                                    <li> - Chuyên ngành: Lập trình máy tính - thiết bị di động</li>
+                                    <li> - GPA: 8.7/10</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+			</div>
+			<div  class="info-item col-sm-12 col-md-6 col-lg-4"  >
+				<div class="info-item-header">
+					<h1 >Hoạt động</h1>
+					<i class="icon-suitcase" ></i>
+				</div>
+                <a type="button" data-bs-toggle="collapse" data-bs-target="#collapseActive" aria-expanded="false" aria-controls="collapseExample">
+                    Xem thêm
+                </a>
+                <div class="collapse" id="collapseActive">
+                    <div class="info-item-content">
+                        <ul class="ul-dot">
+                            <li>
+                                <div class="info-item-content-item">
+                                    <p  class="info-item-content-item__header">Lazada Run 2023</p>
+                                    <p>05/2023</p>
+                                    <p> - Top 50 vận động viên về đích nhanh nhất cự ly 10km</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info-item-content-item">
+                                    <p  class="info-item-content-item__header">
+                                        VnExpress Marathon Hồ Chí Minh 2023</p>
+                                    <p>05/2022 - 09/2022</p>
+                                    <p> - Tình nguyện viên</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info-item-content-item">
+                                    <p  class="info-item-content-item__header">
+                                        Cú đêm Poly</p>
+                                    <p>03/2022</p>
+                                    <p> - Top 1 ứng dụng được bình chọn nhiều nhất</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+			</div>
+			<div  class="info-item col-sm-12 col-md-6 col-lg-4"  >
+                <div class="info-item-header">
+                    <h1>Sở thích</h1>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <a type="button" data-bs-toggle="collapse" data-bs-target="#collapseFav" aria-expanded="false" aria-controls="collapseExample">
+                    Xem thêm
+                </a>
+                <div class="collapse" id="collapseFav">
+                    <div class="fav-items-container">
+                        <div class="fav-item">
+                            <div class="icon-fav-container">
+                                <i class="fa-solid fa-person-running"></i>
+                            </div>
+                            <p> Chạy bộ</p>
+                        </div>
+                        <div class="fav-item">
+                            <div class="icon-fav-container">
+                                <i class="fa-solid fa-tree"></i>
+                            </div>
+                            <p> Trekking</p>
+                        </div>
+                        <div class="fav-item">
+                            <div class="icon-fav-container">
+                                <i class="fa-solid fa-bicycle"></i>
+                            </div>
+                            <p> Đạp xe đạp</p>
+                        </div>
+                    </div>
+                </div>
+
+
+			</div>
+			<div  class="info-item col-sm-12 col-md-6 col-lg-4"  >
+                <div class="info-item-header">
+                    <h1>Ngôn ngữ</h1>
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
+                <a type="button" data-bs-toggle="collapse" data-bs-target="#collapseLanguage" aria-expanded="false" aria-controls="collapseExample">
+                    Xem thêm
+                </a>
+                <div class="collapse" id="collapseLanguage">
+                    <div class="language-item">
+                        <p>Tiếng Việt</p>
+                        <div class="language-item-progress">
+                            <div class="language-item-progress-bar progress-full "></div>
+                            <div class="language-item-progress-bar  progress-full"></div>
+                            <div class="language-item-progress-bar  progress-full"></div>
+                        </div>
+                    </div>
+                    <div class="language-item">
+                        <p>Tiếng Anh</p>
+                        <div class="language-item-progress">
+                            <div class="language-item-progress-bar progress-full"></div>
+                            <div class="language-item-progress-bar"></div>
+                            <div class="language-item-progress-bar "></div>
+                        </div>
+                    </div>
+                </div>
+
+			</div>
+			<div  class="info-item col-sm-12 col-md-6 col-lg-4"  >
+                <div class="info-item-header">
+                    <h1>Kỹ năng</h1>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <a type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkill" aria-expanded="false" aria-controls="collapseExample">
+                    Xem thêm
+                </a>
+                <div class="collapse" id="collapseSkill">
+                    <div class="skill-item">
+                        <p>Javascript: Intermediate</p>
+                        <div class="skill-item-progress">
+                            <div class="skill-item-progress-bar progress-full"></div>
+                            <div class="skill-item-progress-bar progress-full"></div>
+                            <div class="skill-item-progress-bar "></div>
+                        </div>
+
+                    </div>
+                    <div class="skill-item">
+                        <p>Java: Intermediate</p>
+                        <div class="skill-item-progress">
+                            <div class="skill-item-progress-bar progress-full"></div>
+                            <div class="skill-item-progress-bar progress-full"></div>
+                            <div class="skill-item-progress-bar "></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <p>React, React Native: Intermediate</p>
+                        <div class="skill-item-progress">
+                            <div class="skill-item-progress-bar progress-full"></div>
+                            <div class="skill-item-progress-bar progress-full"></div>
+                            <div class="skill-item-progress-bar "></div>
+                        </div>
+
+                    </div>
+                </div>
+
+			</div>
+		</div>
+	</section>
+	<section id="certificate" class="bg-grey">
+		<div class="container">
+			<h1 class="section-title">
+				Chứng chỉ - Giải thưởng
+			</h1>
+			<div class="certificates-items-container">
+
+				<div class="certificate-item">
+                    <img src="images/Cert_DBI.png" alt="">
+                    <div class="right-content">
+						<div class="certificate-item-title">
+							Chứng chỉ lập trình web - funix
+						</div>
+						<div class="certificate-item-description">
+							<p>- Chứng chỉ thuộc chương trình CCDN </p>
+							<p>- GPA: 8.0</p>
+						</div>
+					</div>
+				</div>
+				<div class="column-line" >
+				</div>
+				<div class="certificate-item">
+                    <img src="images/Cert_DBI.png" alt="">
+					<div class="right-content">
+						<div class="certificate-item-title">
+							Chứng chỉ lập trình Javascript - FUNiX
+						</div>
+						<div class="certificate-item-description">
+							<p>- Chứng chỉ thuộc chương trình CCDN </p>
+							<p>- GPA: 8.0</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="certificate-item">
+				<img src="images/Cert_DBI.png" alt="">
+				<div class="right-content">
+					<div class="certificate-item-title">
+						Chứng chỉ lập trình web - funix
+					</div>
+					<div class="certificate-item-description">
+						<p>- Chứng chỉ thuộc chương trình CCDN </p>
+						<p>- GPA: 8.0</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="project">
+		<div class="container">
+			<h1 class="section-title">
+				Dự án
+			</h1>
+			<div class="projects-container row">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="px-1 project-item ">
+						<img src="images/project_1.png" alt="">
+						<p>CV CÁ NHÂN</p>
+						<div class="nav-description">
+							<span>2021</span>
+							<div class="nav-description-child">
+								<i class="fa-solid fa-user"></i>
+								<p> FUNiX</p>
+
+							</div>
+							<div class="nav-description-child">
+								<i class="fa-solid fa-lightbulb"></i>
+								<p> Developer</p>
+
+							</div>
+						</div>
+						<div class="description-line">
+							<p class="label">Mô tả</p>
+							<p>Trang web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng, nghề nghiệp</p>
+						</div>
+						<div class="description-line">
+							<p class="label">Nhiệm vụ</p>
+							<span> - Phát triển code - Review code - Tối ưu code - Xữ lý lỗi</span>
+						</div>
+						<div class="description-line">
+							<p class="label">Công nghệ</p>
+							<p>- HTML, CSS</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="px-1 project-item ">
+						<img src="images/project_1.png" alt="">
+						<p>CV CÁ NHÂN</p>
+						<div class="nav-description">
+							<span>2021</span>
+							<div class="nav-description-child">
+								<i class="fa-solid fa-user"></i>
+								<p> FUNiX</p>
+
+							</div>
+							<div class="nav-description-child">
+								<i class="fa-solid fa-lightbulb"></i>
+								<p> Developer</p>
+
+							</div>
+						</div>
+						<div class="description-line">
+							<p class="label">Mô tả</p>
+							<p>Trang web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng, nghề nghiệp</p>
+						</div>
+						<div class="description-line">
+							<p class="label">Nhiệm vụ</p>
+							<span> - Phát triển code - Review code - Tối ưu code - Xữ lý lỗi</span>
+						</div>
+						<div class="description-line">
+							<p class="label">Công nghệ</p>
+							<p>- HTML, CSS</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="px-1 project-item ">
+						<img src="images/project_1.png" alt="">
+						<p>CV CÁ NHÂN</p>
+						<div class="nav-description">
+							<span>2021</span>
+							<div class="nav-description-child">
+								<i class="fa-solid fa-user"></i>
+								<p> FUNiX</p>
+
+							</div>
+							<div class="nav-description-child">
+								<i class="fa-solid fa-lightbulb"></i>
+								<p> Developer</p>
+
+							</div>
+						</div>
+						<div class="description-line">
+							<p class="label">Mô tả</p>
+							<p>Trang web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng, nghề nghiệp</p>
+						</div>
+						<div class="description-line">
+							<p class="label">Nhiệm vụ</p>
+							<span> - Phát triển code - Review code - Tối ưu code - Xữ lý lỗi</span>
+						</div>
+						<div class="description-line">
+							<p class="label">Công nghệ</p>
+							<p>- HTML, CSS</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="footer" class="bg-grey">
+		<div class="container">
+			<div class="footer-items-container">
+                <a target="_blank" href="https://facebook.com/NG.DY.TAM" class="fa fa-facebook"></a>
+				<a  href="https://facebook.com/NG.DY.TAM" class="footer-item">
+					Facebook
+				</a>
+                <a target="_blank" href="https://github.com/duytamdev" class="fa fa-github"></a>
+				<a href="https://github.com/duytamdev" class="footer-item">
+					Github
+				</a>
+                <a href="#" class="fa fa-linkedin"></a>
+				<div class="footer-item">
+					Linkedin
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+<script src="./scripts/scripts.js"></script>
+</html>

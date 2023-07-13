@@ -1,0 +1,18 @@
+/* CSS cho thiết bị di động */
+@media screen and (max-width: 767px) {
+    .item-center{
+        display: none;
+    }
+    #nav-bar>.container{
+        display: block;
+    }
+    #about> .container{
+        display: block;
+    }
+    .certificates-items-container{
+        display: block;
+    }
+    .certificates-items-container> .column-line{
+       display: none;
+    }
+}
