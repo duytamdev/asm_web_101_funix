@@ -3,16 +3,31 @@
     .item-center{
         display: none;
     }
+    #banner{
+        padding: 0;
+    }
     #nav-bar>.container{
         display: block;
+        padding: 0;
     }
     #about> .container{
         display: block;
+        padding: 0;
     }
+    #full-name{
+        font-size: 40px;
+     }
+
     .certificates-items-container{
         display: block;
     }
     .certificates-items-container> .column-line{
        display: none;
+    }
+    #job-info{
+        width: 100%;
+    }
+    #job-info>div{
+        padding: 0;
     }
 }

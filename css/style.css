@@ -7,18 +7,39 @@
 a{
     text-decoration: none;
 }
+.sub-input--danger{
+    color: red;
+    font-size: 12px;
+}
 .hide{
     display: none;
 }
 .progress-full{
     background-color: rgba(7, 90, 255, 0.62) !important;
 }
+.more-btn{
+    display: none;
+    position: absolute;
+    bottom: 2px;
+    left: 4px;
+}
+
+.info-item{
+    position: relative;
+}
+.info-item-container:hover .info-item>.more-btn{
+    display: block;
+}
+.info-item-container:hover .info-item{
+    border-width: 2px;
+}
+
 #banner{
     background: url(../images/banner.jpg) no-repeat center center;
     background-size: cover;
     height: 60vh;
 }
-#banner > h1{
+#full-name{
     color: #fff;
     font-size: 60px;
     padding-top: 20vh;
@@ -62,7 +83,11 @@ a{
 section > .container{
     margin: 0 auto;
 
-    padding: 30px 50px;
+    padding: 30px 0;
+}
+.info-item-header>.title{
+    font-size: 25px;
+    font-weight: 500;
 }
 
 #nav-bar {
@@ -76,20 +101,19 @@ section > .container{
     justify-content: center;
     align-items: center;
 }
-/*#about> .container{*/
-/*    padding: 0;*/
-/*    display: flex;*/
+#about> .container{
+    padding: 0;
 
-/*}*/
+}
 #about> .container > div{
     flex: 1;
     padding: 30px;
 }
 #target{
-    background-color: rgba(247, 247, 247, 0.79);
+    background-color: #F5F5F5;
 }
 #personal-info{
-    background-color: #f7f7f7;
+    background-color: #F0F0F0;
 }
 .section-title{
     font-size: 25px;
@@ -192,6 +216,7 @@ section > .container{
 }
 .certificate-item{
     display: flex;
+    flex-grow: 1;
 }
 .certificates-items-container> .column-line{
     height: 100px;
@@ -224,16 +249,12 @@ section > .container{
 }
 .description-line>.label{
     font-size: 14px;
-    color: #ccc;
+    color: #a4a4a4;
     min-width: 30%;
 }
 .description-line> p:last-child{
   flex-grow: 1;
 }
-/*.projects-container{*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*}*/
 .project-item{
     /*flex-basis: calc(33.33% - 20px);*/
     border: 1px solid #ccc;
@@ -244,8 +265,9 @@ section > .container{
     height: 200px;
 }
 .certificate-item-title{
-    margin-bottom: 20px;
-    font-size: 14px;
+    margin-bottom: calc(8px + 0.5vw);
+    font-size: 16px;
+    font-weight: 500;
     text-transform: uppercase;
 }
 .project-item> .nav-description>span{
@@ -267,7 +289,9 @@ section > .container{
     margin: 0 auto;
 }
 .nav-description{
-    border: 1px solid #ccc;
+
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     padding: 8px 0;
     display: flex;
     justify-content: center;
@@ -288,12 +312,13 @@ section > .container{
     width: 124px;
     height: 124px;
     border-radius: 99px;
-    border: white 10px solid;
+    border: white 8px solid;
 }
 .ul-dot{
     list-style: none;
 }
 .ul-dot>li::marker {
+    /*hinh tron*/
     content: "\2022";
     color: rgba(7, 90, 255, 0.62);;
     font-weight: bold;
@@ -304,4 +329,8 @@ section > .container{
 }
 .footer-item{
     color: black;
+}
+.project-item>p{
+    font-weight: 600;
+    margin: 10px;
 }

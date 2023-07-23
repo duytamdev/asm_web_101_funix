@@ -3,4 +3,28 @@
  .item-center{
      display: none;
  }
+    #banner{
+        padding: 10px 0;
+    }
+    #full-name{
+        font-size: 40px;
+    }
+    #banner{
+        padding: 0;
+    }
+    #nav-bar>.container{
+        padding: 0;
+    }
+    #about> .container{
+        padding: 0;
+    }
+    #job-info{
+        width: 100%;
+    }
+    #job-info>div{
+        padding: 0;
+    }
+    .certificates-items-container>.certificate-item{
+        display: block;
+    }
 }
